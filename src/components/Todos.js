@@ -2,7 +2,20 @@ import { Fragment, useState } from 'react'
 import TodoItem from './TodoItem'
 
 const Todos = () => {
-    const [todosState, setTodosState] = useState(['Việc 1', 'Việc 2', 'Việc 3'])
+    const [todosState, setTodosState] = useState(
+        [{
+            title: "Việc 1",
+            completed: false
+        },
+        {
+            title: "Việc 2",
+            completed: false
+        },
+        {
+            title: "Việc 3",
+            completed: false
+        }]
+    )
 
     return (
         <Fragment>

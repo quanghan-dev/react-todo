@@ -9,7 +9,7 @@ const TodoItem = props => {
         background: '#f4f4f4',
         padding: '10px',
         borderBottom: '1px #ccc dotted',
-        textDecoration: 'line-through',
+        textDecoration: todo.completed ? 'line-through' : 'none',
         marginRight: '10rem',
         marginLeft: '10rem',
     }
@@ -29,7 +29,7 @@ const TodoItem = props => {
     return (
         <p style={todoItemStyle}>
             <input type="checkbox" />
-            {todo}
+            {todo.title}
             <button style={deleteButtonStyle}>Delete</button>
         </p>
     )
