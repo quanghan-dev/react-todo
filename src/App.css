@@ -24,6 +24,7 @@ a {
   background: #555;
   padding: 7px 20px;
   cursor: pointer;
+  flex: 1;
 }
 
 .btn:hover {

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import React from 'react'
 
 const TodoItem = props => {
 
@@ -11,9 +12,7 @@ const TodoItem = props => {
         background: '#f4f4f4',
         padding: '10px',
         borderBottom: '1px #ccc dotted',
-        textDecoration: todo.completed ? 'line-through' : 'none',
-        marginRight: '10rem',
-        marginLeft: '10rem',
+        textDecoration: todo.completed ? 'line-through' : 'none'
     }
 
     const deleteButtonStyle = {
